@@ -1,0 +1,1903 @@
+/*
+Theme Name: Grateful Graffiti	
+Theme URI: http://www.gratefulgraffiti.com
+Description: A custom theme
+Author: Kristin Falkner
+Author URI: http://www.kristinfalkner.com
+*/
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+    margin:0;
+    padding:0;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Addresses font sizes and margins set differently in IE 6/7.
+ * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	padding:0;
+	}
+
+/*
+ * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * Addresses CSS quotes not supported in IE 6/7.
+ */
+
+q {
+    quotes: none;
+}
+
+/*
+ * Addresses `quotes` property not supported in Safari 4.
+ */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+
+dl,
+menu,
+ol,
+ul {
+    margin: 0;
+    padding:0;
+}
+
+dd {
+    margin: 0;
+}
+
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+
+menu,
+ol,
+ul {
+    margin:0;
+    padding:0;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/*
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ==========================================================================
+   WordPress Standards
+   ========================================================================== */
+   
+.alignleft							{ float: left; margin:0 10px 0 0; }
+.alignright							{ float: right; margin:0 0 0 10px; }
+.aligncenter						{ display:block; margin:0 auto; text-align:center; }
+.clear								{ clear: both; }
+.small								{font-size: 11px;}
+.bold								{font-weight: bold;}
+.wp-caption-text					{text-align:center;}
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Font Kits
+   ========================================================================== */
+
+@font-face {
+    font-family: 'muliitalic';
+    src: url('fonts/muli-italic-webfont.eot');
+    src: url('fonts/muli-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/muli-italic-webfont.woff') format('woff'),
+         url('fonts/muli-italic-webfont.ttf') format('truetype'),
+         url('fonts/muli-italic-webfont.svg#muliitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'muliregular';
+    src: url('fonts/muli-regular-webfont.eot');
+    src: url('fonts/muli-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/muli-regular-webfont.woff') format('woff'),
+         url('fonts/muli-regular-webfont.ttf') format('truetype'),
+         url('fonts/muli-regular-webfont.svg#muliregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('fonts/montserrat-bold-webfont.eot');
+    src: url('fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/montserrat-bold-webfont.woff') format('woff'),
+         url('fonts/montserrat-bold-webfont.ttf') format('truetype'),
+         url('fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'desyrelregular';
+    src: url('fonts/desyrel-webfont.eot');
+    src: url('fonts/desyrel-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/desyrel-webfont.woff') format('woff'),
+         url('fonts/desyrel-webfont.ttf') format('truetype'),
+         url('fonts/desyrel-webfont.svg#desyrelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* ==========================================================================
+   Headers
+   ========================================================================== */
+   
+h1 {
+	font-family: 'montserratbold';
+	font-size:50px;
+	font-weight:normal;
+	text-transform:uppercase;
+	}
+	
+h2 {
+	font-size:22px;
+	font-weight:normal;
+	}
+
+/* ==========================================================================
+   Theme Structure
+   ========================================================================== */
+   
+html, body {
+	height:100%;
+	}
+
+body {
+	background:#fffff1 url(images/bg.png) repeat-y center top;
+	font: 15px 'muliregular', Arial, sans-serif;
+	color:#15041d;
+	}
+	
+#container {
+	min-height:100%;
+	}
+
+#main {
+	width:1100px;
+	margin:0 auto;
+	position:relative;
+	padding-bottom:368px;
+	}
+
+header {
+	overflow:hidden;
+	padding:0 30px;
+	}
+	
+.logo {
+	float:left;
+	margin:18px 0 0;
+	}
+	
+#social-icons {
+	float:right;
+	background:url(images/socialbg.png) no-repeat;
+	width:137px;
+	height:42px;
+	padding:10px;
+	}
+	
+#social-icons li {
+	float:left;
+	list-style-type:none;
+	margin:0 5px;
+	}
+	
+#social-icons li a {
+	width:34px;
+	height:32px;
+	display:block;
+	text-indent:-9999px;
+	text-transform:capitalize;
+	background-image:url(images/social-icons.png);
+	background-repeat:no-repeat;
+	}
+	
+#social-icons li.facebook a {
+	background-position:10px 0;
+	}
+	
+#social-icons li.twitter a {
+	background-position:-37px 0;
+	}
+	
+#social-icons li.pinterest a {
+	background-position:-84px 0;
+	}
+
+nav {
+	position:absolute;
+	right:-23px;
+	top:110px;
+	background:url(images/navbg.png) no-repeat;
+	width:593px;
+	height:27px;
+	padding:20px;
+	}
+	
+nav li {
+	float:left;
+	margin:3px 17px 0;
+	}
+	
+nav li#menu-item-18 {
+	margin-right:0;
+	}
+	
+nav a {
+	color:#fff;
+	font-size:12px;
+	}
+	
+nav a:hover {
+	color:#ec2327;
+	}
+	
+nav li.current-menu-item a {
+	color:#ec2327;
+	font-size:15px;
+	}
+	
+#content {
+	padding:10px 30px;
+	}
+
+a {
+	color:#ec2327;
+	text-decoration:none;
+	}
+	
+/* ==========================================================================
+   Homepage
+   ========================================================================== */
+   
+#home-featured {
+	width:1036px;
+	height:607px;
+	padding:60px 0 0;
+	-webkit-box-shadow: 1px 0px 13px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    1px 0px 13px rgba(0, 0, 0, 0.5);
+	box-shadow:         1px 0px 13px rgba(0, 0, 0, 0.5);
+	margin:0 auto 30px;
+	}
+	
+#home-tag {
+	margin:0 0 0 45px;
+	}
+	
+#home-tag h1 {
+	color:#e81421;
+	font-size:36px;
+	}
+	
+#home-tag p {
+	width:250px;
+	}
+	
+.home-go-btn {
+	background:url(images/gobtn.png) no-repeat 0 0;
+	width:167px;
+	height:73px;
+	display:block;
+	text-indent:-9999px;
+	text-transform:uppercase;
+	margin-left:-8px;
+	}
+	
+#home-bottom {
+	margin-bottom:20px;
+	}
+	
+.home-press {
+	padding:10px 20px;
+	width:327px;
+	height:337px;
+	-webkit-box-shadow: 1px 0px 13px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    1px 0px 13px rgba(0, 0, 0, 0.5);
+	box-shadow:         1px 0px 13px rgba(0, 0, 0, 0.5);
+	position:relative;
+	float:left;
+	margin-left:2px;
+	}
+	
+.home-press .as-seen-in {
+	position:absolute;
+	top:-12px;
+	left:-13px;
+	margin:0;
+	}
+	
+.home-press a.view-all {
+	font-family: 'montserratbold';
+	font-size:14px;
+	background:url(images/arrow-red.png) no-repeat right 2px;
+	padding-right:10px;
+	float:right;
+	}
+	
+.home-press img {
+	display:block;
+	margin:10px auto 0;
+	}
+	
+.home-artist {
+	-webkit-box-shadow: 1px 0px 13px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    1px 0px 13px rgba(0, 0, 0, 0.5);
+	box-shadow:         1px 0px 13px rgba(0, 0, 0, 0.5);
+	float:right;
+	width:620px;
+	padding-right:30px;
+	margin-right:2px;
+	}
+	
+.home-artist-image {
+	width:275px;
+	float:left;
+	}
+	
+.home-artist-info {
+	width:325px;
+	float:right;
+	padding:30px 0 80px;
+	background:url(images/magnets.jpg) no-repeat left bottom;
+	}
+	
+.home-artist-info h2 {
+	font-size:30px;
+	font-family: 'montserratbold';
+	font-weight:normal;
+	margin:0 0 10px;
+	}
+	
+.home-artist-info h3 {
+	font-size:18px;
+	font-family: 'montserratbold';
+	font-weight:normal;
+	margin:0 0 5px;
+	}
+	
+.home-artist-info p {
+	margin:0;
+	padding:0;
+	font-size:15px;
+	line-height:16px;
+	}
+	
+.home-artist-info a.read-more {
+	font-family: 'montserratbold';
+	font-size:14px;
+	background:url(images/arrow-red.png) no-repeat right 5px;
+	padding-right:10px;
+	color:#ec2327;
+	margin-left:-4px;
+	}
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+
+#about-page {
+	background:#fff url(images/aboutbg.jpg) no-repeat center;
+	width:319px;
+	height:1180px;
+	padding:63px 233px 23px 488px;
+	-webkit-box-shadow: 1px 0px 13px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    1px 0px 13px rgba(0, 0, 0, 0.5);
+	box-shadow:         1px 0px 13px rgba(0, 0, 0, 0.5);
+	color:#fff;
+	font-size:18px;
+	}
+	
+#about-page h1, #about-page h2 {
+	text-align:center;
+	}
+
+#about-page h2 {
+	font-family: 'desyrelregular';
+	font-size:30px;
+	font-weight:normal;
+	margin:15px 0;
+	}
+	
+/* ==========================================================================
+   Products
+   ========================================================================== */
+
+#products-top {
+	-webkit-box-shadow: 1px 0px 13px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    1px 0px 13px rgba(0, 0, 0, 0.5);
+	box-shadow:         1px 0px 13px rgba(0, 0, 0, 0.5);
+	padding: 10px 10px 10px 23px;
+	width:1007px;
+	margin:0 0 20px;
+	}
+	
+.products-top-left {
+	width:295px;
+	float:left;
+	padding:20px 0 0 15px;
+	font-size:18px;
+	}
+	
+.products-top-left h1 {
+	color:#ec2327;
+	line-height:50px;
+	margin:0 0 10px;
+	}
+	
+.products-top-left p {
+	margin:0;
+	padding:0;
+	}
+	
+.products-top-left a {
+	color:#000;
+	text-decoration:underline;
+	}
+	
+.products-top-right {
+	width:650px;
+	float:right;
+	}
+	
+.product-filtering {
+	width:225px;
+	float:left;
+	}
+	
+.product-filtering h3 {
+	color:#ec2327;
+	font-size:16px;
+	}
+	
+.product-filtering ul {
+	margin-bottom:15px;
+	}
+	
+.product-filtering li {
+	list-style-type:none;
+	}
+	
+.product-filtering li a {
+	color:#000;
+	}
+	
+.term-new .product-filtering li.new a, .term-limited-edition .product-filtering li.limited-edition a, .term-car-magnets .product-filtering li.car-magnets a {
+	color:#ec2327;
+	}
+	
+.product-note {
+	background:#000;
+	color:#fff;
+	font-size:12px;
+	padding:10px;
+	margin:40px 0 0;
+	}
+	
+.product-note p {
+	margin:0;
+	padding:0;
+	}
+	
+.product-listing {
+	float:right;
+	width:790px;
+	}
+	
+.individual-product {
+	-webkit-box-shadow: 1px 0px 13px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    1px 0px 13px rgba(0, 0, 0, 0.5);
+	box-shadow:         1px 0px 13px rgba(0, 0, 0, 0.5);
+	width:210px;
+	padding:10px;
+	text-align:center;
+	float:left;
+	margin:0 0 33px 33px;
+	position:relative;
+	}
+	
+.individual-product a {
+	color:#000;
+	}
+	
+.individual-product img {
+	border-bottom:1px solid #e8e8e9;
+	margin-bottom:5px;
+	}
+	
+.enlarge-icon {
+	position:absolute;
+	top:10px;
+	right:10px;
+	display:block;
+	text-indent:-9999px;
+	text-transform:capitalize;
+	background:url(images/enlarge.png) no-repeat 0 0;
+	width:20px;
+	height:20px;
+	}
+	
+.individual-product h2 {
+	font-size:13px;
+	text-transform:uppercase;
+	font-weight:normal;
+	margin:0 0 2px;
+	}
+	
+.individual-product-detail {
+	overflow:hidden;
+	}
+	
+.individual-product-detail-image {
+	float:left;
+	width:465px;
+	margin-right:20px;
+	}
+	
+.individual-product-detail-specs {
+	width:300px;
+	float:right;
+	margin:10px 10px 0 0;
+	}
+	
+.individual-product-detail-specs h2 {
+	font-family: 'montserratbold';
+	font-weight:normal;
+	font-size:17px;
+	color:#ec2327;
+	}
+	
+.individual-product-detail-specs h3 {
+	font-weight:normal;
+	font-size:13px;
+	margin:0 0 10px;
+	}
+	
+.individual-product-detail-specs .product-price {
+	font-size:16px;
+	margin:0 0 15px;
+	}
+	
+.individual-product-detail-specs h4 {
+	color:#ec2327;
+	font-weight:normal;
+	font-size:14px;
+	}
+	
+.individual-product-detail-specs p {
+	margin:0;
+	padding:0 0 15px;
+	}
+	
+/* ==========================================================================
+   Artists
+   ========================================================================== */
+   
+#artists-top {
+	-webkit-box-shadow: 1px 0px 13px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    1px 0px 13px rgba(0, 0, 0, 0.5);
+	box-shadow:         1px 0px 13px rgba(0, 0, 0, 0.5);
+	padding: 10px 10px 10px 23px;
+	width:1007px;
+	margin:0 0 40px;
+	}
+	
+.artists-top-left {
+	width:295px;
+	float:left;
+	padding:20px 0 0 15px;
+	font-size:18px;
+	}
+	
+.artists-top-left h1 {
+	display:block;
+	background:url(images/artists.png) no-repeat;
+	width:218px;
+	height:37px;
+	text-indent:-9999px;
+	text-transform:capitalize;
+	margin:0 0 15px;
+	}
+	
+.artists-top-left p {
+	margin:0;
+	padding:0;
+	}
+	
+.artists-top-right {
+	width:650px;
+	float:right;
+	}
+	
+.single-artist {
+	-webkit-box-shadow: 1px 0px 13px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    1px 0px 13px rgba(0, 0, 0, 0.5);
+	box-shadow:         1px 0px 13px rgba(0, 0, 0, 0.5);
+	margin-bottom:20px;
+	}
+	
+.artist-info {
+	width:680px;
+	float:right;
+	padding:15px 20px 15px 0;
+	font-size:13px;
+	}
+	
+.artist-info h2 {
+	font-size:28px;
+	font-family: 'montserratbold';
+	text-transform:uppercase;
+	color:#ec2327;
+	float:left;
+	}
+	
+.artist-website {
+	float:right;
+	text-decoration:underline;
+	margin:5px 5px 0 0;
+	}
+	
+.artist-info p {
+	line-height:20px;
+	}
+	
+/* ==========================================================================
+   Grateful Gallery
+   ========================================================================== */
+
+#gallery-top {
+	-webkit-box-shadow: 1px 0px 13px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    1px 0px 13px rgba(0, 0, 0, 0.5);
+	box-shadow:         1px 0px 13px rgba(0, 0, 0, 0.5);
+	padding: 10px 10px 10px 23px;
+	width:1007px;
+	}
+	
+.gallery-top-left {
+	width:295px;
+	float:left;
+	padding:20px 0 0 15px;
+	font-size:18px;
+	}
+	
+.gallery-top-left h1 {
+	color:#ec2327;
+	line-height:50px;
+	margin:0 0 10px;
+	}
+	
+.gallery-top-left p {
+	margin:0;
+	padding:0;
+	}
+	
+.gallery-top-right {
+	width:650px;
+	float:right;
+	}
+	
+#gallery-bottom {
+	margin:40px 0 0;
+	}
+	
+#gallery-bottom-left {
+	width:370px;
+	float:left;
+	}
+	
+.gallery-twitter {
+	border:10px solid #222;
+	margin-bottom:40px;
+	}
+	
+.gallery-twitter-header {
+	background:#222 url(images/twittericon.png) no-repeat 10px 0;
+	text-align:right;
+	color:#ec2327;
+	font-size:13px;
+	padding:15px 10px 35px 0;
+	}
+	
+.gallery-twitter-header h2, .gallery-fb-header h2 {
+	color:#fffff1;
+	font-size:26px;
+	font-weight:normal;
+	font-family: 'montserratbold';
+	}
+	
+#content .gallery-twitter .norotatingtweets {
+	padding:0 15px;
+	border-top:none;
+	border-bottom:none;
+	}
+	
+.gallery-fb {
+	border:10px solid #222;
+	}
+	
+.gallery-fb-header {
+	background:#222 url(images/fbicon.png) no-repeat 10px 0;
+	text-align:right;
+	color:#ec2327;
+	font-size:13px;
+	padding:15px 10px 35px 0;
+	}
+	
+#gallery-bottom-right {
+	width:640px;
+	float:right;
+	}
+	
+.gallery-image {
+	background:#fff;
+	padding:8px;
+	-webkit-box-shadow: 1px 0px 13px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    1px 0px 13px rgba(0, 0, 0, 0.5);
+	box-shadow:         1px 0px 13px rgba(0, 0, 0, 0.5);
+	width:272px;
+	float:left;
+	position:relative;
+	margin:0 0 30px 30px;
+	}
+	
+.enlarge {
+	position:absolute;
+	top:4px;
+	right:4px;
+	display:block;
+	text-indent:-9999px;
+	text-transform:capitalize;
+	background:url(images/enlarge.png) no-repeat 0 0;
+	width:20px;
+	height:20px;
+	}
+	
+#grateful-form .gform_wrapper {
+	max-width:100%;
+	}
+	
+#grateful-form .gform_wrapper .top_label .gfield_error .ginput_container {
+	max-width:100%;
+	}
+	
+#grateful-form .gform_wrapper .ginput_complex input[type=text], #grateful-form .gform_wrapper .ginput_complex .ginput_right input[type=text], #grateful-form .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=text], #grateful-form .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=text] {
+	padding:10px;
+	font-size:14px;
+	width:280px !important;
+	}
+	
+#grateful-form .gform_wrapper li#field_2_3 .gfield_label {
+	color:#ec2327;
+	font-size:20px;
+	font-family: 'montserratbold';
+	text-transform:uppercase;
+	font-weight:normal;
+	}
+	
+#grateful-form .gform_wrapper li#field_2_3 .gfield_required {
+	display:none;
+	}
+	
+#grateful-form .gform_wrapper .ginput_complex .ginput_left {
+	width:310px;
+	margin:0 0 12px;
+	}
+	
+#grateful-form .gform_wrapper .ginput_complex .ginput_right {
+	width:310px;
+	margin:0 0 12px;
+	}
+	
+#grateful-form .gform_wrapper .top_label input.medium {
+	width:595px;
+	padding:10px;
+	font-size:14px;
+	margin:0 0 15px;
+	}
+	
+#grateful-form .gform_wrapper .top_label textarea.textarea, #grateful-form .gform_wrapper .top_label .gfield_error textarea.textarea {
+	width:595px;
+	padding:10px;
+	height:160px;
+	font-size:14px;
+	}
+	
+#grateful-form input[type=text] {
+	background:#f4f4f4;
+	border:1px solid #dad8d9;
+	}
+	
+#grateful-form textarea {
+	background:#f4f4f4;
+	border:1px solid #dad8d9;
+	}
+	
+#grateful-form .gform_wrapper .gform_footer {
+	margin:15px 0 0;
+	padding:0;
+	overflow:hidden;
+	}
+	
+#grateful-form .gform_button {
+	width:79px;
+	height:37px;
+	background:url(images/submitbtn.png) no-repeat 0 0;
+	display:block;
+	text-indent:-9999px;
+	text-transform:capitalize;
+	border:none;
+	float:right;
+	margin-right:7px;
+	}
+	
+#grateful-form .gform_button:hover {
+	background-position:0 -37px;
+	}
+	
+#grateful-form .gform_wrapper li.gfield.gfield_error.gfield_contains_required {
+	margin:0 !important;
+	padding:0 !important;
+	}
+	
+#grateful-form .gform_wrapper li.gfield.gfield_error {
+	border:none;
+	background:transparent;
+	}
+	
+#grateful-form .gform_wrapper .top_label .gfield_error {
+	width:100%;
+	}
+	
+#grateful-form .gform_wrapper li.gfield_error input[type=text], #grateful-form .gform_wrapper .top_label .gfield_error textarea.textarea {
+	border:1px solid #ec2327;
+	}
+	
+#grateful-form .gform_wrapper .gfield_description.validation_message {
+	display:none;
+	}
+	
+#grateful-form .gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label {
+	margin:0;
+	}
+	
+	
+#grateful-form p {
+	font-family: 'muliitalic';
+	text-align:center;
+	font-size:12px;
+	padding:10px 0 0;
+	}
+
+	
+/* ==========================================================================
+   Press
+   ========================================================================== */
+   
+#press-top {
+	-webkit-box-shadow: 1px 0px 13px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    1px 0px 13px rgba(0, 0, 0, 0.5);
+	box-shadow:         1px 0px 13px rgba(0, 0, 0, 0.5);
+	padding: 10px 10px 10px 23px;
+	width:1007px;
+	margin-bottom:40px;
+	}
+	
+.press-top-left {
+	width:295px;
+	float:left;
+	padding:20px 0 0 15px;
+	font-size:18px;
+	}
+	
+.press-top-left h1 {
+	color:#ec2327;
+	}
+	
+.press-top-left p {
+	margin:0;
+	padding:0;
+	}
+	
+.press-top-right {
+	width:650px;
+	float:right;
+	}
+   
+.sidebar {
+	width:175px;
+	float:left;
+	margin-right:25px;
+	font-size:16px;
+	line-height:28px;
+	}
+	
+.sidebar li {
+	list-style-type:none;
+	}
+	
+.sidebar h3 {
+	font-size:16px;
+	font-weight:normal;
+	color:#ec2327;
+	text-transform:uppercase;
+	}
+	
+.sidebar a {
+	color:#000;
+	}
+	
+.post-detail, .press-content {
+	width:710px;
+	float:left;
+	color:#535353;
+	padding-bottom:20px;
+	position:relative;
+	}
+	
+.press-content h1 {
+	background:#000;
+	color:#fff;
+	font-size:20px;
+	margin:0 0 20px;
+	}
+	
+.post {
+	padding-bottom:30px;
+	}
+	
+.post h2 a {
+	color:#535353;
+	}
+	
+p.post-meta {
+	text-transform:uppercase;
+	margin:5px 0;
+	padding:0;
+	font-size:12px;
+	color:#6a6a6a;
+	}
+	
+.post-image-block {
+	position:relative;
+	}
+	
+.post-share-details {
+	width:60px;
+	right:12px;
+	top:118px;
+	position:absolute; 
+	display:none;
+	}
+	
+.post-share-details a {
+	color:#676767;
+	font-size:12px;
+	}
+	
+.post-image-block img {
+	padding:5px;
+	background:#f5f5f5;
+	float:left;
+	}
+	
+.post-info-block {
+	background:#f5f5f5;
+	float:left;
+	width:60px;
+	}
+	
+.post-date {
+	color:#676767;
+	text-transform:uppercase;
+	text-align:center;
+	padding:10px 0;
+	border-bottom:1px solid #d6d6d6;
+	}
+	
+.post-date span {
+	display:block;
+	font-size:28px;
+	font-weight:bold;
+	font-family:Arial;
+	}
+	
+a.post-share {
+	background:url(images/share-icon.png) no-repeat 1px 12px;
+	padding:10px 0 10px 24px;
+	display:block;
+	font-size:12px;
+	color:#676767;
+	border-bottom:1px solid #d6d6d6;
+	}
+	
+a.post-share:hover {
+	background:#e6e6e6 url(images/share-icon.png) no-repeat 1px 12px;
+	}
+	
+.read-more {
+	font-size:12px;
+	color:#fff;
+	background:#ec2327;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	float:left;
+	padding:3px 5px 0;
+	}
+	
+p.post-tags {
+	margin:0 15px 0 0;
+	padding:0 0 0 20px;
+	font-size:12px;
+	float:right;
+	background:url(images/tag-icon.png) no-repeat 0 2px;
+	}
+	
+/* ==========================================================================
+   Contact
+   ========================================================================== */
+
+#contact-top {
+	-webkit-box-shadow: 1px 0px 13px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    1px 0px 13px rgba(0, 0, 0, 0.5);
+	box-shadow:         1px 0px 13px rgba(0, 0, 0, 0.5);
+	padding:23px;
+	width:994px;
+	}
+	
+.contact-top-left {
+	width:295px;
+	float:left;
+	padding:20px 0 0 15px;
+	font-size:18px;
+	}
+	
+.contact-top-left h1 {
+	color:#ec2327;
+	}
+	
+.contact-top-left p {
+	margin:0;
+	padding:0;
+	}
+	
+.contact-top-right {
+	width:650px;
+	float:right;
+	}
+	
+#contact-bottom {
+	overflow:hidden;
+	padding:40px 0;
+	}
+	
+#contact-bottom h2 {
+	color:#ec2327;
+	font-size:18px;
+	font-weight:normal;
+	font-family: 'montserratbold';
+	margin:0 0 20px;
+	}
+	
+.contact-form {
+	float:left;
+	width:625px;
+	padding:0 40px;
+	border-right:1px solid #ec2327;
+	}
+	
+.contact-form .gform_wrapper {
+	max-width:100%;
+	}
+	
+.contact-form .gform_wrapper .top_label .gfield_error .ginput_container {
+	max-width:100%;
+	}
+	
+.contact-form .gform_wrapper .ginput_complex input[type=text], .contact-form .gform_wrapper .ginput_complex .ginput_right input[type=text], .contact-form .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=text], .contact-form .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=text] {
+	padding:10px;
+	font-size:14px;
+	width:280px !important;
+	}
+	
+.contact-form .gform_wrapper .ginput_complex .ginput_left {
+	width:310px;
+	margin:0 0 12px;
+	}
+	
+.contact-form .gform_wrapper .ginput_complex .ginput_right {
+	width:310px;
+	margin:0 0 12px;
+	}
+	
+.contact-form .gform_wrapper .top_label input.medium {
+	width:595px;
+	padding:10px;
+	font-size:14px;
+	margin:0 0 15px;
+	}
+	
+.contact-form .gform_wrapper .top_label textarea.textarea, .contact-form .gform_wrapper .top_label .gfield_error textarea.textarea {
+	width:595px;
+	padding:10px;
+	height:160px;
+	font-size:14px;
+	}
+	
+.contact-form input[type=text] {
+	background:#f4f4f4;
+	border:1px solid #dad8d9;
+	}
+	
+.contact-form textarea {
+	background:#f4f4f4;
+	border:1px solid #dad8d9;
+	}
+	
+.contact-form .gform_wrapper .gform_footer {
+	margin:15px 0 0;
+	padding:0;
+	overflow:hidden;
+	}
+	
+.contact-form .gform_button {
+	width:79px;
+	height:37px;
+	background:url(images/submitbtn.png) no-repeat 0 0;
+	display:block;
+	text-indent:-9999px;
+	text-transform:capitalize;
+	border:none;
+	float:right;
+	margin-right:7px;
+	}
+	
+.contact-form .gform_button:hover {
+	background-position:0 -37px;
+	}
+	
+.contact-form .gform_wrapper li.gfield.gfield_error.gfield_contains_required {
+	margin:0 !important;
+	padding:0 !important;
+	}
+	
+.contact-form .gform_wrapper li.gfield.gfield_error {
+	border:none;
+	background:transparent;
+	}
+	
+.contact-form .gform_wrapper .top_label .gfield_error {
+	width:100%;
+	}
+	
+.contact-form .gform_wrapper li.gfield_error input[type=text], .contact-form .gform_wrapper .top_label .gfield_error textarea.textarea {
+	border:1px solid #ec2327;
+	}
+	
+.contact-form .gform_wrapper .gfield_description.validation_message {
+	display:none;
+	}
+	
+.contact-form .gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label {
+	margin:0;
+	}
+	
+.contact-info {
+	float:right;
+	width:295px;
+	color:#656565;
+	font-size:15px;
+	}
+	
+.contact-info .phone-number {
+	background:url(images/contact-icons.jpg) no-repeat 0 0;
+	padding-left: 26px;
+	}
+	
+.contact-info .email-address {
+	background:url(images/contact-icons.jpg) no-repeat 0 -38px;
+	padding-left: 26px;
+	color:#656565;
+	text-decoration:underline;
+	margin:20px 0;
+	display:block;
+	}
+	
+.contact-info .address {
+	background:url(images/contact-icons.jpg) no-repeat 0 -76px;
+	padding-left: 26px;
+	}
+	
+.contact-info .address p {
+	margin:0;
+	padding:0;
+	}
+	
+/* ==========================================================================
+   Sticky Footer
+   ========================================================================== */
+   
+footer {
+	position: relative;
+	margin-top: -368px; /* negative value of footer height */
+	height: 368px;
+	clear:both;
+	background:url(images/footerbg.jpg) repeat-x top center;
+	} 
+	
+#footer-content {
+	width:1100px;
+	margin:0 auto;
+	padding:15px 0 0;
+	}
+	
+#footer-content .menu-main-menu-container {
+	float:left;
+	font-size:14px;
+	margin-left:90px;
+	}
+	
+#footer-content .menu-main-menu-container li {
+	float:left;
+	margin: 0 30px;
+	}
+	
+#footer-content .menu-main-menu-container a {
+	color:#8d8c89;
+	}
+	
+#footer-content .site-tag {
+	color:#5e5e5e;
+	float:right;
+	font-size:10px;
+	}
+	
+#footer-content .site-tag a {
+	color:#5e5e5e;
+	}
+	
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+/* iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/* iPhone */
+@media only screen and (max-width: 767px) and (min-width: 0) {
+}

@@ -1,0 +1,1 @@
+chrome-extension://gfbepnlhpkbgbkcebjnfhgjckibfdfkc/content/player-card.js
