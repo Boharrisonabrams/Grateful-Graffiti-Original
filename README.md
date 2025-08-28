@@ -87,19 +87,48 @@ grateful-graffiti/
 
 ## 🌐 Deployment Options
 
+### 🚀 Vercel Deployment (Recommended)
+
+**Option A: Deploy from GitHub (Recommended)**
+1. Push this repository to GitHub (see instructions below)
+2. Go to [Vercel Dashboard](https://vercel.com/dashboard)
+3. Click "New Project" → "Import Git Repository"
+4. Select your `Grateful-Graffiti-Original` repository
+5. Vercel will auto-detect it as a static site
+6. Click "Deploy" - Done! 🎉
+
+**Option B: Deploy via Vercel CLI**
+```bash
+npm i -g vercel
+vercel --prod
+```
+
+### 📚 GitHub Setup
+1. Go to [GitHub](https://github.com) and create a new repository:
+   - Repository name: `Grateful-Graffiti-Original`
+   - Set as Public
+   - Don't initialize with README (we already have one)
+
+2. Connect your local repository:
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/Grateful-Graffiti-Original.git
+   git branch -M main
+   git push -u origin main
+   ```
+
 ### Local Development
 ```powershell
-cd site
+cd C:\static-sites\grateful-graffiti
+.\serve.ps1    # Use the included PowerShell script
+# OR
 python -m http.server 8080
 ```
 
-### Static Hosting Services
-Upload the `site/` directory to:
-- **Netlify** - Drag & drop the `site` folder
-- **Vercel** - Connect to Git repository
-- **GitHub Pages** - Push to `gh-pages` branch
+### Other Static Hosting Services
+- **Netlify** - Drag & drop this entire folder
+- **GitHub Pages** - Enable Pages in repository settings
 - **AWS S3** - Static website hosting
-- **Any web host** - Upload via FTP to public_html
+- **Any web host** - Upload files via FTP to public_html
 
 ### Docker (Optional)
 ```dockerfile
